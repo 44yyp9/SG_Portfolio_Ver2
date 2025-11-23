@@ -16,14 +16,16 @@ export default function Talks() {
         }}
       >
         <Typography
-          variant="h3"
-          sx={{
-            marginBottom: 6,
-            textAlign: "center",
-            fontWeight: 700,
-            color: "#66c0f4",
-          }}
-        >
+                  variant="h3"
+                  sx={{
+                    color: "#66c0f4",
+                    fontWeight: 700,
+                    letterSpacing: "1px",
+                    textAlign: "center",
+                    mb: 5,
+                    textShadow: "0 0 10px #1b8ed8aa",
+                  }}
+                >
           LT資料
         </Typography>
 

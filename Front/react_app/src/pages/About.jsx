@@ -39,7 +39,6 @@ Unity をメインにゲーム開発・ツール制作・設計を行ってい�
 特にアーキテクチャ設計（State・Command・DI・Factory）にこだわった開発を好みます。
 `,
         },
-
         {
             title: "経歴",
             isRich: true,
@@ -84,7 +83,6 @@ Unity をメインにゲーム開発・ツール制作・設計を行ってい�
                 },
             ],
         },
-
         {
             title: "開発経験",
             isRich: true,
@@ -110,7 +108,6 @@ SOLID 原則に基づいたチーム開発を実践。`,
                 },
             ],
         },
-
         {
             title: "得意分野",
             isRich: true,
@@ -121,39 +118,38 @@ SOLID 原則に基づいたチーム開発を実践。`,
                 { subtitle: "設計・技術", text: `アーキテクチャデザイン / 設計思想の整理\nチーム開発でのレビュー・設計相談` },
             ],
         },
-{
-    title: "技術活動",
-    isRich: true,
-    items: [
         {
-            subtitle: "GitHub",
-            text: (
-                <Link
-                    href="https://github.com/YourName"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    sx={{ color: "#66c0f4", textDecoration: "underline" }}
-                >
-                    https://github.com/YourName
-                </Link>
-            ),
+            title: "技術活動",
+            isRich: true,
+            items: [
+                {
+                    subtitle: "GitHub",
+                    text: (
+                        <Link
+                            href="https://github.com/YourName"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            sx={{ color: "#66c0f4", textDecoration: "underline" }}
+                        >
+                            https://github.com/YourName
+                        </Link>
+                    ),
+                },
+                {
+                    subtitle: "Qiita",
+                    text: (
+                        <Link
+                            href="https://qiita.com/YourName"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            sx={{ color: "#66c0f4", textDecoration: "underline" }}
+                        >
+                            https://qiita.com/YourName
+                        </Link>
+                    ),
+                },
+            ],
         },
-        {
-            subtitle: "Qiita",
-            text: (
-                <Link
-                    href="https://qiita.com/YourName"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    sx={{ color: "#66c0f4", textDecoration: "underline" }}
-                >
-                    https://qiita.com/YourName
-                </Link>
-            ),
-        },
-    ],
-},
-
         {
             title: "趣味",
             content: `
@@ -185,29 +181,30 @@ SOLID 原則に基づいたチーム開発を実践。`,
 
     return (
         <div>
-            {/* HomePage と同じ構成：Header を外側に置く */}
+            {/* Header */}
             <Header />
 
             <Box
                 sx={{
                     minHeight: "100vh",
-                    // ヘッダーが固定表示されている場合に被らないよう上部余白を確保
                     padding: "40px 20px",
                     paddingTop: "120px",
                     background: "linear-gradient(180deg, #1b2838, #0e1a27)",
                     color: "#c7d5e0",
                 }}
             >
-                {/* タイトル */}
+                {/* タイトル「ABOUT ME」だけ光らせる */}
                 <Typography
-                    variant="h3"
-                    sx={{
-                        marginBottom: 4,
-                        textAlign: "center",
-                        fontWeight: 700,
-                        color: "#66c0f4",
-                    }}
-                >
+                          variant="h3"
+                          sx={{
+                            color: "#66c0f4",
+                            fontWeight: 700,
+                            letterSpacing: "1px",
+                            textAlign: "center",
+                            mb: 5,
+                            textShadow: "0 0 10px #1b8ed8aa",
+                          }}
+                        >
                     ABOUT ME
                 </Typography>
 
@@ -273,7 +270,7 @@ SOLID 原則に基づいたチーム開発を実践。`,
                                     <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
                                         {sec.items.map((item, idx) => (
                                             <Box key={idx}>
-                                                {/* 年表示は年のみ表示（subtitle がある場合は ExperienceItem 側で見出しを表示する） */}
+                                                {/* 年表示 */}
                                                 {item.year && (
                                                     <Typography
                                                         variant="subtitle1"
@@ -283,7 +280,7 @@ SOLID 原則に基づいたチーム開発を実践。`,
                                                     </Typography>
                                                 )}
 
-                                                {/* subtitle がある場合は ExperienceItem を使う */}
+                                                {/* subtitle がある場合は ExperienceItem */}
                                                 {item.subtitle ? (
                                                     <ExperienceItem subtitle={item.subtitle} text={item.text} />
                                                 ) : (
