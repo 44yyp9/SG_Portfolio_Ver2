@@ -17,7 +17,7 @@ export default function GameCard({ game }) {
       <CardMedia
         component="img"
         height="140"
-        image={game.thumbnail}
+        image={process.env.PUBLIC_URL + game.thumbnail}
       />
       <CardContent>
         <Typography variant="h6">{game.title}</Typography>

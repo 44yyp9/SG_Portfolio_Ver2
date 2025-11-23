@@ -216,7 +216,7 @@ C#以外にもPythonを用いたツール開発や、バックエンドの開発
                 {/* アイコン */}
                 <Box sx={{ textAlign: "center", marginBottom: 4 }}>
                     <Avatar
-                        src="/img/icons/myIcon.png"
+                        src={process.env.PUBLIC_URL + "/img/icons/myIcon.png"}
                         sx={{
                             width: 120,
                             height: 120,
