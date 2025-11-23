@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "2024年~2025年夏",
+    "month": "2025年7月",
+    "venue": "東京電機大学 LT会",
+    "embedUrl": "https://docs.google.com/presentation/d/1olAgLN6QpbGVwTIHGvlepcJ1hNkeKw6khpJCIy2xWEo/embed",
+    "description": "Unity や React を使ったゲーム開発の設計や制作について発表"
+  },
+  {
+    "id": 2,
+    "title": "MAD RAT DEAD LT",
+    "month": "2024年12月",
+    "venue": "社内勉強会",
+    "embedUrl": "https://docs.google.com/presentation/d/1olAgLN6QpbGVwTIHGvlepcJ1hNkeKw6khpJCIy2xWEo/embed",
+    "description": "リズムアクションゲームのシステム設計について発表"
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "languages": [
+    {
+      "name": "C#",
+      "icon": "/img/icons/unity.png",
+      "level": 5,
+      "experienceYears": 4,
+      "description": "Unityを中心にアーキテクチャ設計やツール制作で利用。"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "/img/icons/unity.png",
+      "level": 4,
+      "experienceYears": 2,
+      "description": "ReactによるWebフロント開発で使用。"
+    }
+  ],
+  "libraries": [
+    {
+      "name": "React",
+      "icon": "/img/icons/unity.png",
+      "level": 4,
+      "experienceYears": 2,
+      "description": "ポートフォリオサイト制作で使用。"
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Unity",
+      "icon": "/img/icons/unity.png",
+      "level": 5,
+      "experienceYears": 4,
+      "description": "2D・3D、リズムゲーム、State/Command/DI設計を多用。"
+    }
+  ],
+  "tools": [
+    {
+      "name": "Git",
+      "icon": "/img/icons/unity.png",
+      "level": 4,
+      "experienceYears": 3,
+      "description": "チーム開発、個人開発で利用。"
+    }
+  ]
+}

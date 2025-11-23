@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "MAD RAT DEAD",
+    "price": 1980,
+    "thumbnail": "/img/Lapina_samene.png",
+    "description": "リズムに合わせて進む2Dアクションゲーム。",
+    "tags": ["Action", "Rhythm", "2D"],
+    "screenshots": [
+      "/img/screen1.png",
+      "/img/screen2.png",
+      "/img/screen3.png"
+    ],
+    "playUrl": "https://example.com/play/madratdead",
+    "development": {
+      "期間": "2024年1月〜2024年6月",
+      "人数": 3,
+      "役割": {
+        "プログラマー": 2,
+        "デザイナー": 1
+      },
+      "担当箇所": "ゲームプレイシステム、敵AI",
+      "フレームワーク・言語": ["Unity", "C#"],
+      "ライブラリ": ["DOTween", "TextMeshPro"],
+      "工夫点": "リズムに合わせた攻撃判定の最適化",
+      "その他": "サウンドとアニメーションをシンクロさせた演出"
+    }
+  },
+  {
+    "id": 2,
+    "title": "My Rhythm Game",
+    "price": 1200,
+    "thumbnail": "/img/Lapina_samene.png",
+    "description": "リズムに合わせて進む2Dアクションゲーム。",
+    "tags": ["Action", "Rhythm", "2D"],
+    "screenshots": [
+      "/img/screen1.png",
+      "/img/screen2.png",
+      "/img/screen3.png"
+    ],
+    "playUrl": "https://example.com/play/madratdead",
+    "development": {
+      "期間": "2024年1月〜2024年6月",
+      "人数": 3,
+      "役割": {
+        "プログラマー": 2,
+        "デザイナー": 1
+      },
+      "担当箇所": "ゲームプレイシステム、敵AI",
+      "フレームワーク・言語": ["Unity", "C#"],
+      "ライブラリ": ["DOTween", "TextMeshPro"],
+      "工夫点": "リズムに合わせた攻撃判定の最適化",
+      "その他": "サウンドとアニメーションをシンクロさせた演出"
+    }
+  }
+]
