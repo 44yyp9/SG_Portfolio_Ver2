@@ -33,10 +33,9 @@ export default function About() {
     const sections = [
         {
             title: "自己紹介",
-            content: `
-アクアリウム と申します。
-Unity をメインにゲーム開発・ツール制作・設計を行っています。
-特にアーキテクチャ設計（State・Command・DI・Factory）にこだわった開発を好みます。
+            content: `SGと申します。大学生です。
+Unityをメインにゲーム開発・ツール制作・設計を行っています。
+特にアーキテクチャ、設計にこだわった開発が好きです。
 `,
         },
         {
@@ -52,6 +51,9 @@ Unity をメインにゲーム開発・ツール制作・設計を行ってい�
                         {
                             label: "SEGA 1Day アプリケーションインターンシップ",
                             url: "https://www.sega.co.jp/recruit/fresh/internship/college_pgm02.html",
+                        },{
+                            label: "Game Speed Hackathon atum",
+                            url: "https://www.cyberagent.co.jp/careers/students/career_event/detail/id=31823",
                         },
                         {
                             label: "Game Client College ~設計編~",
@@ -79,6 +81,10 @@ Unity をメインにゲーム開発・ツール制作・設計を行ってい�
                             label: "楽天 夏のプロトタイプ開発（Application Engineer）",
                             url: "https://corp.rakuten.co.jp/careers/graduates/event/natsunojin/",
                         },
+                        {
+                            label: "Ca Tech Lounge",
+                            url: "https://www.cyberagent.co.jp/careers/special/students/tech_lounge/",
+                        }
                     ],
                 },
             ],
@@ -87,24 +93,24 @@ Unity をメインにゲーム開発・ツール制作・設計を行ってい�
             title: "開発経験",
             isRich: true,
             items: [
-                { subtitle: "開発年数", text: "約 3 年（個人開発 + チーム開発）" },
+                { subtitle: "開発年数", text: "約4年(個人開発 + チーム開発)" },
                 {
                     subtitle: "主な担当",
-                    text: `ゲームクライアント / 設計 / アーキテクチャデザイン / ツール開発 / UI / リファクタリング`,
+                    text: `プログラム/ゲームクライアント / 設計 / ツール開発 / リファクタリング/コードレビュー`,
                 },
                 {
                     subtitle: "使用技術",
-                    text: `Unity / C# / React / TypeScript / Firebase`,
+                    text: `Unity / C# / FastAPI / Python / React / JavaScript / C++ / Git`,
                 },
                 {
-                    subtitle: "開発人数",
-                    text: `個人開発 1 名 〜 5 名規模のチーム開発を経験`,
+                    subtitle: "開発",
+                    text: `個人開発から小規模7名のチーム開発、中規模13名のチーム開発を経験`,
                 },
                 {
                     subtitle: "技術的な工夫",
-                    text: `State パターン・Command パターン・DI・Factory の多用。  
-大規模でも破綻しないコード設計を常に意識。  
-SOLID 原則に基づいたチーム開発を実践。`,
+                    text: `オブジェクト指向プログラミングに則った保守性、拡張性を重視した設計を実践。  
+Unityエディタ拡張を用いて開発の効率化を意識した実装  
+C#以外にもPythonを用いたツール開発や、バックエンドの開発も経験`,
                 },
             ],
         },
@@ -112,10 +118,10 @@ SOLID 原則に基づいたチーム開発を実践。`,
             title: "得意分野",
             isRich: true,
             items: [
-                { subtitle: "Unity", text: `2D アクション / リズムゲーム / ツール開発\nゲームパターン設計（State・Command・Factory・DI）` },
-                { subtitle: "C#", text: `SOLID 原則をベースにした OOP 設計\n可読性・保守性の高い設計 / アーキテクチャ改善 / リファクタリング` },
-                { subtitle: "フロントエンド", text: `React / TypeScript / Firebase\nポートフォリオやゲームツール UI の制作が得意` },
-                { subtitle: "設計・技術", text: `アーキテクチャデザイン / 設計思想の整理\nチーム開発でのレビュー・設計相談` },
+                { subtitle: "Unity", text: `エディタ拡張 /  UniTask・R3 / NUnit\n複数人によるチーム開発` },
+                { subtitle: "C#", text: `SOLID 原則をベースにした OOP 設計/ PureC#を用いたゲーム開発\n可読性・保守性の高い設計 / リファクタリング` },
+                { subtitle: "Python", text: `Seleniumを用いた自動化 / FastAPIを用いたバックエンドの開発` },
+                { subtitle: "設計・技術", text: `SOLID原則 / Dry・WET原則 / クリーンアーキテクチャ\n単体テスト / チーム開発でのレビュー・設計相談` },
             ],
         },
         {
@@ -126,12 +132,12 @@ SOLID 原則に基づいたチーム開発を実践。`,
                     subtitle: "GitHub",
                     text: (
                         <Link
-                            href="https://github.com/YourName"
+                            href="https://github.com/44yyp9"
                             target="_blank"
                             rel="noopener noreferrer"
                             sx={{ color: "#66c0f4", textDecoration: "underline" }}
                         >
-                            https://github.com/YourName
+                            https://github.com/44yyp9
                         </Link>
                     ),
                 },
@@ -139,12 +145,12 @@ SOLID 原則に基づいたチーム開発を実践。`,
                     subtitle: "Qiita",
                     text: (
                         <Link
-                            href="https://qiita.com/YourName"
+                            href="https://qiita.com/_SG_"
                             target="_blank"
                             rel="noopener noreferrer"
                             sx={{ color: "#66c0f4", textDecoration: "underline" }}
                         >
-                            https://qiita.com/YourName
+                            https://qiita.com/_SG_
                         </Link>
                     ),
                 },
@@ -152,10 +158,9 @@ SOLID 原則に基づいたチーム開発を実践。`,
         },
         {
             title: "趣味",
-            content: `
-・ゲーム制作  
-・音ゲー（太鼓の達人系の制作中）  
-・アクアリウム（名前の由来）  
+            content: `・ゲーム制作  
+・ビジュアルノベルゲームなど  
+・インディーズゲーム  
 ・技術調査、設計研究  
 `,
         },
@@ -211,7 +216,7 @@ SOLID 原則に基づいたチーム開発を実践。`,
                 {/* アイコン */}
                 <Box sx={{ textAlign: "center", marginBottom: 4 }}>
                     <Avatar
-                        src="/img/Lapina_samene.png"
+                        src="/img/icons/myIcon.png"
                         sx={{
                             width: 120,
                             height: 120,

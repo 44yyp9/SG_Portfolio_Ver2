@@ -2,44 +2,141 @@
   "languages": [
     {
       "name": "C#",
-      "icon": "/img/icons/unity.png",
-      "level": 5,
-      "experienceYears": 4,
+      "icon": "/img/icons/csharp.png",
+      "level": 4,
+      "experienceYears": 3,
       "description": "Unityを中心にアーキテクチャ設計やツール制作で利用。"
     },
     {
-      "name": "JavaScript",
-      "icon": "/img/icons/unity.png",
+      "name": "Python",
+      "icon": "/img/icons/py.png",
       "level": 4,
-      "experienceYears": 2,
+      "experienceYears": 4,
+      "description": "FastAPIによるバックエンド開発や自動化スクリプトで使用。"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "/img/icons/js.png",
+      "level": 3,
+      "experienceYears": 1.5,
       "description": "ReactによるWebフロント開発で使用。"
+    },{
+      "name": "C++",
+      "icon": "/img/icons/cpp.png",
+      "level": 2,
+      "experienceYears": 1,
+      "description": "インターシップにて開発を経験。"
+    },{
+      "name": "Java",
+      "icon": "/img/icons/ja.png",
+      "level": 1,
+      "experienceYears": 0.5,
+      "description": "参考書を用いて基礎を学習。"
+    },{
+      "name": "PHP",
+      "icon": "/img/icons/php.png",
+      "level": 1,
+      "experienceYears": 0.5,
+      "description": "参考書を用いて基礎を学習。"
+    },{
+      "name": "C",
+      "icon": "/img/icons/c.png",
+      "level": 2,
+      "experienceYears": 1,
+      "description": "大学の授業で基礎を学習。"
     }
   ],
   "libraries": [
     {
-      "name": "React",
+      "name": "UniTask",
+      "icon": "/img/icons/unity.png",
+      "level": 3,
+      "experienceYears": 1,
+      "description": "非同期処理で多用。"
+    },{
+      "name": "R3",
+      "icon": "/img/icons/unity.png",
+      "level": 3,
+      "experienceYears": 1,
+      "description": "リアクティブプログラミングで利用。"
+    },{
+      "name": "NUnit",
       "icon": "/img/icons/unity.png",
       "level": 4,
-      "experienceYears": 2,
-      "description": "ポートフォリオサイト制作で使用。"
+      "experienceYears": 1,
+      "description": "テストコード作成で利用。"
+    },{
+      "name": "DoTween",
+      "icon": "/img/icons/unity.png",
+      "level": 3,
+      "experienceYears": 1,
+      "description": "アニメーション制御で利用。"
+    },{
+      "name": "Selenium",
+      "icon": "/img/icons/py.png",
+      "level": 4,
+      "experienceYears": 4,
+      "description": "ブラウザ自動操作で利用。"
     }
   ],
   "frameworks": [
     {
       "name": "Unity",
       "icon": "/img/icons/unity.png",
-      "level": 5,
-      "experienceYears": 4,
-      "description": "2D・3D、リズムゲーム、State/Command/DI設計を多用。"
+      "level": 4,
+      "experienceYears": 3,
+      "description": "2D・3Dゲーム開発、ツール制作で多用。"
+    },{
+      "name": "FastAPI",
+      "icon": "/img/icons/fastApi.png",
+      "level": 3,
+      "experienceYears": 2,
+      "description": "バックエンド開発で利用。"
+    },{
+      "name": "React",
+      "icon": "/img/icons/react.png",
+      "level": 2,
+      "experienceYears": 0.5,
+      "description": "Webフロントエンド開発で利用。"
     }
   ],
   "tools": [
     {
       "name": "Git",
-      "icon": "/img/icons/unity.png",
+      "icon": "/img/icons/git.png",
       "level": 4,
       "experienceYears": 3,
       "description": "チーム開発、個人開発で利用。"
+    },{
+      "name": "GitHub",
+      "icon": "/img/icons/github.png",
+      "level": 3,
+      "experienceYears": 3,
+      "description": "コード管理、ポートフォリオ公開で利用。"
+    },{
+      "name": "Docker",
+      "icon": "/img/icons/docker.png",
+      "level": 2,
+      "experienceYears": 1,
+      "description": "環境構築で利用。"
+    },{
+      "name": "Visual Studio",
+      "icon": "/img/icons/vs.png",
+      "level": 3,
+      "experienceYears": 3,
+      "description": "C#の開発で多用。"
+    },{
+      "name": "Rider",
+      "icon": "/img/icons/rider.png",
+      "level": 2,
+      "experienceYears": 1,
+      "description": "C#の開発で利用。"
+    },{
+      "name": "Visual Studio Code",
+      "icon": "/img/icons/vsCode.png",
+      "level": 3,
+      "experienceYears": 4,
+      "description": "多様な言語の開発で利用。"
     }
   ]
 }

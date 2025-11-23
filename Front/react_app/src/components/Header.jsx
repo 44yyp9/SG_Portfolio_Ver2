@@ -39,7 +39,7 @@ export default function Header() {
             component={Link}
             to="/"
           >
-            AQUA PORTFOLIO
+            SG Portfolio
           </Typography>
 
           {/* メニュー */}
