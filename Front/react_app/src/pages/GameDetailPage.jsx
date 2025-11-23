@@ -1,11 +1,13 @@
+// GameDetailPage.jsx
 import { useParams, useNavigate } from "react-router-dom";
 import games from "../data/games.json";
 import Header from "../components/Header";
 import { Box, Button, Chip, Typography } from "@mui/material";
 import GameCarousel from "../components/GameCarousel";
 import { useInView } from "react-intersection-observer";
+import { useState } from "react";
 
-// 開発詳細用のコンポーネント
+// ▼ 開発詳細用コンポーネント
 const DetailSection = ({ title, content }) => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
 
@@ -55,6 +57,8 @@ export default function GameDetailPage() {
   const navigate = useNavigate();
   const game = games.find((g) => g.id === Number(id));
 
+  const [currentSlide, setCurrentSlide] = useState(0); // 現在のスライド番号
+
   if (!game)
     return (
       <Box sx={{ minHeight: "100vh", backgroundColor: "#1b2838", color: "white" }}>
@@ -67,6 +71,9 @@ export default function GameDetailPage() {
     );
 
   const dev = game.development;
+
+  // スライド画像配列
+  const slides = [game.thumbnail, ...(game.screenshots || [])];
 
   return (
     <Box sx={{ backgroundColor: "#1b2838", minHeight: "100vh", color: "white", pb: 10 }}>
@@ -83,8 +90,28 @@ export default function GameDetailPage() {
           justifyContent: "center",
         }}
       >
-        <Box sx={{ flex: 1, minWidth: 300, maxWidth: 600, borderRadius: 2, overflow: "hidden", boxShadow: "0 10px 30px rgba(0,0,0,0.5)" }}>
-          <GameCarousel images={[game.thumbnail, ...(game.screenshots || [])]} height={400} />
+        <Box sx={{ flex: 1, minWidth: 300, maxWidth: 600, borderRadius: 2, overflow: "hidden", boxShadow: "0 10px 30px rgba(0,0,0,0.5)", position: "relative" }}>
+          {/* 1枚目は YouTube 表示、それ以外はカルーセル */}
+          {currentSlide === 0 && game.YouTubeUrl ? (
+            <Box sx={{ width: "100%", height: 400 }}>
+              <iframe
+                width="100%"
+                height="100%"
+                src={game.YouTubeUrl} // embed URLをそのまま使用
+                title={game.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </Box>
+          ) : (
+            <GameCarousel
+              images={slides}
+              height={400}
+              autoplay={false} // 手動操作のみ
+              onSlideChange={(index) => setCurrentSlide(index)}
+            />
+          )}
         </Box>
 
         <Box sx={{ flex: 1, minWidth: 300, maxWidth: 600, display: "flex", flexDirection: "column", gap: 2 }}>
