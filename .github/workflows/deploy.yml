@@ -6,18 +6,16 @@ on:
       - main
 
 permissions:
-  contents: write   # ← ★ これ必須
+  contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 18
 
@@ -25,13 +23,15 @@ jobs:
         working-directory: ./Front/react_app
         run: npm install
 
-      - name: Set git config   # ← ★ これ必須
+      - name: Set git config
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
+      - name: Configure git remote with token   # ← ★ 超重要
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+
       - name: Deploy to GitHub Pages
         working-directory: ./Front/react_app
         run: npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
