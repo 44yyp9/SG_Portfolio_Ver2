@@ -1,58 +1,152 @@
 [
   {
     "id": 1,
-    "title": "MAD RAT DEAD",
-    "price": 1980,
+    "title": "LAPINA(ラピーニャ)",
+    "price": "free",
     "thumbnail": "/img/Lapina_Samene.png",
     "description": "リズムに合わせて進む2Dアクションゲーム。",
-    "tags": ["Action", "Rhythm", "2D"],
+    "tags": ["アクションゲーム", "リズムゲーム","リズムアクションゲーム", "2D"],
     "screenshots": [
       "/img/screen1.png",
       "/img/screen2.png",
       "/img/screen3.png"
     ],
-    "playUrl": "https://example.com/play/madratdead",
-    "YouTubeUrl": "https://www.youtube.com/embed/xsOUPSNpe-Q",
+    "playUrl": "https://gameparade.creators-guild.com/works/3351",
+    "YouTubeUrl": "https://www.youtube.com/embed/utVlcaoSfoE",
     "development": {
-      "期間": "2024年1月〜2024年6月",
-      "人数": 3,
+      "期間": "2024年10月〜現在",
+      "人数": 13,
       "役割": {
-        "プログラマー": 2,
-        "デザイナー": 1
+        "プログラマー": 3,
+        "デザイナー": 9,
+        "サウンドクリエイター": 1
       },
-      "担当箇所": "ゲームプレイシステム、敵AI",
+      "担当箇所": "共通基盤の実装、インゲーム、コードレビュー、メインプログラマー",
       "フレームワーク・言語": ["Unity", "C#"],
-      "ライブラリ": ["DOTween", "TextMeshPro"],
-      "工夫点": "リズムに合わせた攻撃判定の最適化",
-      "その他": "サウンドとアニメーションをシンクロさせた演出"
+      "ライブラリ": ["UniTask","R3","DOTween", "NUnit"],
+      "工夫点": "共通基盤の実装において開発メンバーが使いやすい設計を心がけ、インタフェースの分離やカプセル化の意識、またユニットテストの導入を行った。またインゲームのリズムアクションゲームではアニメーションの爽快さをユーザーに体験してもらうために展示会でのフィードバックを元に調整を何度も重ねたこと。",
+      "その他": "エディタ拡張による開発効率化などを実施。"
     }
   },
   {
     "id": 2,
-    "title": "My Rhythm Game",
-    "price": 1200,
-    "thumbnail": "/img/Lapina_Samene.png",
-    "description": "リズムに合わせて進む2Dアクションゲーム。",
+    "title": "ソフキャラライフ",
+    "price": "free",
+    "thumbnail": "/img/SofuChaLife.png",
+    "description": "キャラクター達と1年間交流するシミュレーションノベルゲーム。",
+    "tags": ["シミュレーション", "ノベルゲーム"],
+    "screenshots": [
+      "/img/screen1.png",
+      "/img/screen2.png",
+      "/img/screen3.png"
+    ],
+    "playUrl": "https://tdu-src.github.io/SRC_novel_game/",
+    "YouTubeUrl": "https://www.youtube.com/embed/qcO9OreN8ZQ",
+    "development": {
+      "期間": "2024年3月〜2024年9月",
+      "人数": 7,
+      "役割": {
+        "プランナー": 1,
+        "マネージャー" : 1,
+        "プログラマー": 1,
+        "デザイナー": 2,
+        "サウンドクリエイター": 1,
+        "シナリオライター": 1
+      },
+      "担当箇所": "プログラム全て",
+      "フレームワーク・言語": ["ティラノスクリプト", "JavaScript"],
+      "ライブラリ": ["専用プラグインなど"],
+      "工夫点": "自動デプロイを実施することで、プランナーがすぐにプレイし肌間などを共有できるようにした。またチームでの開発のため、他業種のメンバーとも密にコミュニケーションを取り、仕様のすり合わせを行った。",
+      "その他": "マネージャーがコードレビューを行い、品質向上に努めた。"
+    }
+  },
+  {
+    "id": 3,
+    "title": "祖父犬ボール",
+    "price": "free",
+    "thumbnail": "/img/SofukenBall.png",
+    "description": "「CLIMBING OVER IT」風のゲーム",
     "tags": ["Action", "Rhythm", "2D"],
     "screenshots": [
       "/img/screen1.png",
       "/img/screen2.png",
       "/img/screen3.png"
     ],
-    "playUrl": "https://example.com/play/madratdead",
+    "playUrl": "https://unityroom.com/games/gamejam2025_test#google_vignette",
     "YouTubeUrl": "https://www.youtube.com/embed/xsOUPSNpe-Q",
     "development": {
-      "期間": "2024年1月〜2024年6月",
-      "人数": 3,
+      "期間": "2025年6月〜2025年7月",
+      "人数": 7,
       "役割": {
-        "プログラマー": 2,
-        "デザイナー": 1
+        "プランナー":1,
+        "マネージャー" :1,
+        "プログラマー":2,
+        "デザイナー":2,
+        "サウンドクリエイター":1
       },
-      "担当箇所": "ゲームプレイシステム、敵AI",
+      "担当箇所": "マネージャー、サブプログラマー、コードレビュー",
       "フレームワーク・言語": ["Unity", "C#"],
-      "ライブラリ": ["DOTween", "TextMeshPro"],
-      "工夫点": "リズムに合わせた攻撃判定の最適化",
-      "その他": "サウンドとアニメーションをシンクロさせた演出"
+      "ライブラリ": ["なし"],
+      "工夫点": "チーム開発のマネージャーとして進捗管理を行い、各メンバーがスムーズに開発を進められるようにした。またサブプログラマーとして、メインプログラマーと密に連携を取りながら、コードレビューも担当した。",
+      "その他": "なし"
+    }
+  },
+  {
+    "id": 4,
+    "title": "めもりのめもりある",
+    "price": "free",
+    "thumbnail": "/img/MemoriNoMemorial.png",
+    "description": "スイカゲームライのゲーム",
+    "tags": ["スイカゲーム", "カジュアルゲーム"],
+    "screenshots": [
+      "/img/screen1.png",
+      "/img/screen2.png",
+      "/img/screen3.png"
+    ],
+    "playUrl": "https://unityroom.com/games/memori",
+    "YouTubeUrl": "https://www.youtube.com/embed/eo4jab7RCpM",
+    "development": {
+      "期間": "2024年10月〜2024年12月",
+      "人数": 7,
+      "役割": {
+        "プランナー":1,
+        "マネージャー" :1,
+        "プログラマー":1,
+        "デザイナー":3,
+        "サウンドクリエイター":1
+      },
+      "担当箇所": "マネージャー、サブプログラマー、コードレビュー",
+      "フレームワーク・言語": ["Unity", "C#"],
+      "ライブラリ": ["なし"],
+      "工夫点": "チーム開発のマネージャーとして進捗管理を行い、各メンバーがスムーズに開発を進められるようにした。またサブプログラマーとして、メインプログラマーと密に連携を取りながら、コードレビューも担当した。",
+      "その他": "初めてマネージャーを担当しました"
+    }
+  },
+  {
+    "id": 5,
+    "title": "マジ神神ゲーム",
+    "price": "free",
+    "thumbnail": "/img/MaJiKamikamiGame.png",
+    "description": "2Dアクションゲーム",
+    "tags": ["アクションゲーム"],
+    "screenshots": [
+      "/img/screen1.png",
+      "/img/screen2.png",
+      "/img/screen3.png"
+    ],
+    "playUrl": "https://unityroom.com/games/nekoneko_1",
+    "YouTubeUrl": "https://www.youtube.com/embed/m4UJKeDroqY",
+    "development": {
+      "期間": "2023年8月〜2023年12月",
+      "人数": 1,
+      "役割": {
+        "個人開発":1
+      },
+      "担当箇所": "全て",
+      "フレームワーク・言語": ["Unity", "C#"],
+      "ライブラリ": ["なし"],
+      "工夫点": "実際に創造したものを形にすることを意識しながら開発を行いました。",
+      "その他": "初めてのゲーム開発でしたのでUnityの勉強をしながら開発を行いました。"
     }
   }
 ]
