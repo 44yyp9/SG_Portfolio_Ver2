@@ -20,6 +20,7 @@ export default function GameCarousel({ images }) {
         <SwiperSlide key={i}>
           <img
             src={process.env.PUBLIC_URL + img}
+            alt={`Game screenshot ${i + 1}`}
             style={{
               width: "100%",
               height: "350px",
