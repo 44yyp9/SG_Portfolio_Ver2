@@ -3,7 +3,7 @@
     "id": 1,
     "title": "MAD RAT DEAD",
     "price": 1980,
-    "thumbnail": "/img/Lapina_samene.png",
+    "thumbnail": "/img/Lapina_Samene.png",
     "description": "リズムに合わせて進む2Dアクションゲーム。",
     "tags": ["Action", "Rhythm", "2D"],
     "screenshots": [
@@ -31,7 +31,7 @@
     "id": 2,
     "title": "My Rhythm Game",
     "price": 1200,
-    "thumbnail": "/img/Lapina_samene.png",
+    "thumbnail": "/img/Lapina_Samene.png",
     "description": "リズムに合わせて進む2Dアクションゲーム。",
     "tags": ["Action", "Rhythm", "2D"],
     "screenshots": [
