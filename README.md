@@ -1,2 +1,4 @@
 # SG_Portfolio_Ver2
 これはSGのポートフォリオでReactで再度制作したサイトです
+
+ymlが動くかのテスト
