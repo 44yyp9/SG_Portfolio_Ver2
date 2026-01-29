@@ -7,7 +7,7 @@ import GameCard from "../components/GameCard";
 import GameCarousel from "../components/GameCarousel";
 
 export default function HomePage() {
-  const bannerImages = games.map((g) => g.thumbnail);
+  const bannerImages = games.map((g) => process.env.PUBLIC_URL + g.thumbnail);
 
   return (
     <div>

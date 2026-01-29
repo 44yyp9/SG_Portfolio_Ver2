@@ -44,7 +44,7 @@ export default function TechCard({ name, icon, level, experienceYears, descripti
 
       {/* アイコン */}
       <img
-        src={icon}
+        src={process.env.PUBLIC_URL + icon}
         alt={name}
         style={{
           width: 60,
