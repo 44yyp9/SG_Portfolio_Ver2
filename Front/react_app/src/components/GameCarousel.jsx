@@ -19,7 +19,7 @@ export default function GameCarousel({ images }) {
       {images.map((img, i) => (
         <SwiperSlide key={i}>
           <img
-            src={img}
+            src={process.env.PUBLIC_URL + img}
             style={{
               width: "100%",
               height: "350px",
