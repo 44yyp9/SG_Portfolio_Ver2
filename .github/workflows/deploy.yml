@@ -3,7 +3,10 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - main  # ← 必要に応じて変更（開発しているブランチ）
+      - main
+
+permissions:
+  contents: write   # ← ★ これ必須
 
 jobs:
   deploy:
@@ -21,6 +24,11 @@ jobs:
       - name: Install dependencies
         working-directory: ./Front/react_app
         run: npm install
+
+      - name: Set git config   # ← ★ これ必須
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
 
       - name: Deploy to GitHub Pages
         working-directory: ./Front/react_app
