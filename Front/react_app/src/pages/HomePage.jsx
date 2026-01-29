@@ -7,7 +7,8 @@ import GameCard from "../components/GameCard";
 import GameCarousel from "../components/GameCarousel";
 
 export default function HomePage() {
-  const bannerImages = games.map((g) => process.env.PUBLIC_URL + g.thumbnail);
+  // GameCarousel 側で PUBLIC_URL を付与するため、ここでは生パスを渡す
+  const bannerImages = games.map((g) => g.thumbnail);
 
   return (
     <div>
