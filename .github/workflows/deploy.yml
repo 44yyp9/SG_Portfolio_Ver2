@@ -19,9 +19,11 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
+        working-directory: ./Front/react_app
         run: npm install
 
       - name: Deploy to GitHub Pages
+        working-directory: ./Front/react_app
         run: npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
