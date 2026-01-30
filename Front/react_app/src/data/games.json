@@ -66,14 +66,14 @@
     "price": "free",
     "thumbnail": "/img/SofukenBall.png",
     "description": "「CLIMBING OVER IT」風のゲーム",
-    "tags": ["Action", "Rhythm", "2D"],
+    "tags": ["CLIMBING OVER IT", "3D"],
     "screenshots": [
       "/img/screen1.png",
       "/img/screen2.png",
       "/img/screen3.png"
     ],
     "playUrl": "https://unityroom.com/games/gamejam2025_test#google_vignette",
-    "YouTubeUrl": "https://www.youtube.com/embed/xsOUPSNpe-Q",
+    "YouTubeUrl": "https://www.youtube.com/embed/jzEtLJZWUjo",
     "development": {
       "期間": "2025年6月〜2025年7月",
       "人数": 7,
